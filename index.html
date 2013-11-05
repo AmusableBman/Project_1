@@ -50,7 +50,7 @@
 		
 
 		
-		$( "#tabs" ).tabs();
+		$("#tabs, #subtabs").tabs();
 		
 
 		
@@ -114,14 +114,73 @@
 <body>
 	<div id="tabs">
 		<ul>
-			<li><a href="#tabs-1">First</a></li>
-			<li><a href="#tabs-2">Second</a></li>
-			<li><a href="#tabs-3">Third</a></li>
-			<li><a href="#tabs-4">Third</a></li>
-			<li><a href="#tabs-5">Third</a></li>
-			<li><a href="#tabs-6">Third</a></li>
+			<li><a href="#tabs-1">Home</a></li>
+			<li><a href="#tabs-2">About Me</a></li>
+			<li><a href="#tabs-3">Projects</a></li>
+			<li><a href="#tabs-4">Services</a></li>
+			<li><a href="#tabs-5">Contact Me</a></li>
+			<li><a href="#tabs-6">GitHub</a></li>
 		</ul>
-		<div id="tabs-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+		<div id="tabs-1">
+			<div id="welcomeBox">
+				<h1 id="welcome">
+					Hello, fellow coders!
+				</h1>
+  
+				<p id="welcomestatement">
+					Welcome, one and all, to the site of Brandon Hewlett. I love what I do, I'm good at it, and I live for the 12-hour coding binge. My mission is simply to become a better developer of any and all types of code.
+				</p>
+			</div>
+			<!--Photo slider provided by Javascriptkit.com-->
+			<table border="0" cellpadding="0">
+			  <caption><strong>Air Show Photos</strong></caption>
+			  <tr>
+				<td width="100%"><img src="plane1.gif" width="300" height="240" name="photoslider"></td>
+			  </tr>
+			  <tr>
+				<td width="100%"><form method="POST" name="rotater">
+				  <div align="center"><center><p><script language="JavaScript1.1">
+			var photos=new Array()
+			var which=0
+
+			/*Change the below variables to reference your own images. You may have as many images in the slider as you wish*/
+			photos[0]="plane1.gif"
+			photos[1]="plane2.gif"
+			photos[2]="plane3.gif"
+			photos[3]="plane4.gif"
+			photos[4]="plane5.gif"
+
+
+			function backward(){
+			if (which>0){
+			window.status=''
+			which--
+			document.images.photoslider.src=photos[which]
+			}
+			}
+
+			function forward(){
+			if (which<photos.length-1){
+			which++
+			document.images.photoslider.src=photos[which]
+			}
+			else window.status='End of gallery'
+			}
+			</script><input type="button" value="&lt;&lt;Back" name="B2"
+				  onClick="backward()"> <input type="button" value="Next&gt;&gt;" name="B1"
+				  onClick="forward()"><br>
+				  <a href="#" onClick="which=1;backward();return false"><small>Start Over</small></a></p>
+				  </center></div>
+				</form>
+				</td>
+			  </tr>
+			</table>
+
+			<p align="center"><font face="arial" size="-2">This free script provided by</font><br>
+			<font face="arial, helvetica" size="-2"><a href="http://javascriptkit.com">JavaScript
+			Kit</a></font></p>
+		</div>
+		
 		<div id="tabs-2">Phasellus mattis tincidunt nibh. Cras orci urna, blandit id, pretium vel, aliquet ornare, felis. Maecenas scelerisque sem non nisl. Fusce sed lorem in enim dictum bibendum.</div>
 		<div id="tabs-3">Nam dui erat, auctor a, dignissim quis, sollicitudin eu, felis. Pellentesque nisi urna, interdum eget, sagittis et, consequat vestibulum, lacus. Mauris porttitor ullamcorper augue.</div>
 		<div id="tabs-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
