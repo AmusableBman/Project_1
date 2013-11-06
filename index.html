@@ -4,10 +4,13 @@
 	<meta charset="utf-8">
 	<title>Brandon Hewlett</title>
 	<link href="css/ui-lightness/jquery-ui-1.10.3.custom.css" rel="stylesheet">
-	<!--<link href="css/jquery.mobile.custom.structure.css" rel="stylesheet">
-	<link href="css/jquery.mobile.custom.theme.css" rel="stylesheet">-->
+	<<link href="css/jquery.mobile.custom.structure.css" rel="stylesheet">
+	<link href="css/jquery.mobile.custom.theme.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 	<script src="js/jquery-1.9.1.js"></script>
 	<script src="js/jquery-ui-1.10.3.custom.js"></script>
+	<script src="js/jquery.mobile.custom.js"></script>
+	
 		<script>
 	$(function() {
 		
@@ -15,88 +18,7 @@
 		
 
 		
-		var availableTags = [
-			"ActionScript",
-			"AppleScript",
-			"Asp",
-			"BASIC",
-			"C",
-			"C++",
-			"Clojure",
-			"COBOL",
-			"ColdFusion",
-			"Erlang",
-			"Fortran",
-			"Groovy",
-			"Haskell",
-			"Java",
-			"JavaScript",
-			"Lisp",
-			"Perl",
-			"PHP",
-			"Python",
-			"Ruby",
-			"Scala",
-			"Scheme"
-		];
-		$( "#autocomplete" ).autocomplete({
-			source: availableTags
-		});
-		
-
-		
-		$( "#button" ).button();
-		$( "#radioset" ).buttonset();
-		
-
-		
 		$("#tabs, #subtabs").tabs();
-		
-
-		
-		$( "#dialog" ).dialog({
-			autoOpen: false,
-			width: 400,
-			buttons: [
-				{
-					text: "Ok",
-					click: function() {
-						$( this ).dialog( "close" );
-					}
-				},
-				{
-					text: "Cancel",
-					click: function() {
-						$( this ).dialog( "close" );
-					}
-				}
-			]
-		});
-
-		// Link to open the dialog
-		$( "#dialog-link" ).click(function( event ) {
-			$( "#dialog" ).dialog( "open" );
-			event.preventDefault();
-		});
-		
-
-		
-		$( "#datepicker" ).datepicker({
-			inline: true
-		});
-		
-
-		
-		$( "#slider" ).slider({
-			range: true,
-			values: [ 17, 67 ]
-		});
-		
-
-		
-		$( "#progressbar" ).progressbar({
-			value: 20
-		});
 		
 
 		// Hover states on the static widgets
@@ -112,6 +34,15 @@
 	</script>
 <head>
 <body>
+	<!--Main Logo-->
+	<div id="logo">
+		<div id="name">
+			Brandon Hewlett
+		</div>
+		<div id="desc">
+			Amateur Coding for Professional Situations
+		</div>
+	</div>
 	<div id="tabs">
 		<ul>
 			<li><a href="#tabs-1">Home</a></li>
@@ -193,7 +124,14 @@
 			</p>
 		</div>
 		<div id="tabs-3">
-		
+			<div id="accordion">
+				<h3>Java Traffic Lights</h3>
+				<div></div>
+				<h3>Visual Studio Car Price Calculator</h3>
+				<div></div>
+				<h3>Project Management - Project Charter</h3>
+				<div></div>
+			</div>
 		</div>
 		<div id="tabs-4">
 			<h1 id="serviceshead">
