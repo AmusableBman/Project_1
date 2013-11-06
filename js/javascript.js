@@ -4,13 +4,14 @@ Site: Portfolio - Brandon Hewlett
 File: javascript.js. All the javascript (excluding Jquery) for the site. 
 */
 
+/*Jquery UI functions required*/
 	$(function() {
 		
 		$( "#accordion" ).accordion();
 		
 
 		
-		$("#tabs, #subtabs").tabs();
+		$("#tabs").tabs();
 		
 
 		// Hover states on the static widgets
