@@ -4,34 +4,14 @@
 	<meta charset="utf-8">
 	<title>Brandon Hewlett</title>
 	<link href="css/ui-lightness/jquery-ui-1.10.3.custom.css" rel="stylesheet">
-	<<link href="css/jquery.mobile.custom.structure.css" rel="stylesheet">
+	<link href="css/jquery.mobile.custom.structure.css" rel="stylesheet">
 	<link href="css/jquery.mobile.custom.theme.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 	<script src="js/jquery-1.9.1.js"></script>
 	<script src="js/jquery-ui-1.10.3.custom.js"></script>
 	<script src="js/jquery.mobile.custom.js"></script>
+	<script src="js/javascript.js"></script>
 	
-		<script>
-	$(function() {
-		
-		$( "#accordion" ).accordion();
-		
-
-		
-		$("#tabs, #subtabs").tabs();
-		
-
-		// Hover states on the static widgets
-		$( "#dialog-link, #icons li" ).hover(
-			function() {
-				$( this ).addClass( "ui-state-hover" );
-			},
-			function() {
-				$( this ).removeClass( "ui-state-hover" );
-			}
-		);
-	});
-	</script>
 <head>
 <body>
 	<!--Main Logo-->
@@ -62,42 +42,17 @@
 					Welcome, one and all, to the site of Brandon Hewlett. I love what I do, I'm good at it, and I live for the 12-hour coding binge. My mission is simply to become a better developer of any and all types of code.
 				</p>
 			</div>
+			
 			<!--Photo slider provided by Javascriptkit.com-->
-			<table border="0" cellpadding="0">
+			<table border="0" cellpadding="0" id="slidertable">
 			  <caption><strong>Air Show Photos</strong></caption>
 			  <tr>
-				<td width="100%"><img src="plane1.gif" width="300" height="240" name="photoslider"></td>
+				<a href="#tabs-3"><td width="100%"><img src="images/javaproj.jpg" width="600" height="400" name="photoslider"></td></a>
 			  </tr>
 			  <tr>
 				<td width="100%"><form method="POST" name="rotater">
-				  <div align="center"><center><p><script language="JavaScript1.1">
-			var photos=new Array()
-			var which=0
-
-			/*Change the below variables to reference your own images. You may have as many images in the slider as you wish*/
-			photos[0]="plane1.gif"
-			photos[1]="plane2.gif"
-			photos[2]="plane3.gif"
-			photos[3]="plane4.gif"
-			photos[4]="plane5.gif"
-
-
-			function backward(){
-			if (which>0){
-			window.status=''
-			which--
-			document.images.photoslider.src=photos[which]
-			}
-			}
-
-			function forward(){
-			if (which<photos.length-1){
-			which++
-			document.images.photoslider.src=photos[which]
-			}
-			else window.status='End of gallery'
-			}
-			</script><input type="button" value="&lt;&lt;Back" name="B2"
+				  <div align="center"><center><p>
+				  <input type="button" value="&lt;&lt;Back" name="B2"
 				  onClick="backward()"> <input type="button" value="Next&gt;&gt;" name="B1"
 				  onClick="forward()"><br>
 				  <a href="#" onClick="which=1;backward();return false"><small>Start Over</small></a></p>
@@ -124,13 +79,20 @@
 			</p>
 		</div>
 		<div id="tabs-3">
+		Right click link and hit "Save as" to download files
 			<div id="accordion">
 				<h3>Java Traffic Lights</h3>
-				<div></div>
-				<h3>Visual Studio Car Price Calculator</h3>
-				<div></div>
+				<div>
+				A Traffic lights system that simulates a 4-way Intersection. <a href = "downloads/BrandonHewlettAssignment1.zip" download = "javascriptAssignment.zip">Download.</a>
+				</div>
+				<h3>Visual Studio Temperature Converter</h3>
+				<div>
+				A Visual Studio Program that converts a given temperature between Celcius and Fahrenheit. <a href = "downloads/Exam_Review.zip" download = "RADAssignment.zip">Download.</a>
+				</div>
 				<h3>Project Management - Project Charter</h3>
-				<div></div>
+				<div>
+				A Project Management assignment in which we had to develop a project charter. <a href = "downloads/Assignment 1.docx" download = "projmanAssignment">Download.</a>
+				</div>
 			</div>
 		</div>
 		<div id="tabs-4">
@@ -141,7 +103,7 @@
 				Web Development
 			</h2>
 			<p id="services">
-			  Need a website developed? My knowledge of HTML, CSS, PHP, Javascript, and Jquery will be an asset to any project. Able to work individually on in a team.
+			  Need a website developed? My knowledge of HTML, CSS, PHP, Javascript, and Jquery will be an asset to any project. Able to work individually or in a team.
 			  $15/hour
 			</p>
 
@@ -190,6 +152,24 @@
 			</div>
 			
 		</div>
-		<div id="tabs-6"></div>
+		<div id="tabs-6">
+			<a href="https://github.com/AmusableBman/Project_1">GitHub</a>
+		</div>
 	</div>
+	
+	<!--Keep Connected Panel -->
+		<div id="keepconnected">
+			<p>Keep Connected</p>
+			<a href="https://www.facebook.com/brandon.hewlett.79">Facebook</a>
+			<a href="https://twitter.com/AmusableBman">Twitter</a>
+			<a href="https://github.com/AmusableBman">GitHub</a>
+		</div><br />
+	
+	<div id="copyright">
+	All assets seen here are, unless otherwise noted, the work and property of Brandon Kyle Hewlett. 
+	Copyright and intellectual property laws protect these assets. Reproduction or recreation of this site, in any part,
+	without written consent is a violation of copyright law, and will result in me personally beating you with a stick.
+	</div>
+</div>
+	
 </body>
